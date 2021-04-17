@@ -4,7 +4,7 @@ import json
 import  sys
 
 TRN_URL = 'https://public-api.tracker.gg/v2/apex/standard'
-API_KEY = 'xxxxx'
+API_KEY = '5bf288a4-6f2d-43e3-a810-4fbee6749467'
     
 def GetProfile(platform, playerId):
     sendUrl  = TRN_URL + '/profile'
