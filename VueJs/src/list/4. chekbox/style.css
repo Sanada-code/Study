@@ -1,0 +1,7 @@
+.lists{
+  list-style-type: none;
+
+}
+.lists .closed{
+  text-decoration: line-through;
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+  <title>disp lists</title>
+</head>
+<body>
+  <div id="app">
+    <h1>list</h1>
+    <ul class="lists">
+      <li v-for="(item, index) in lists" >
+        <input type="checkbox" v-model="item.checked"> 
+        <span v-bind:class="{closed: item.checked}">{{ item.name }}</span>
+        <input type="button" value="del" v-on:click="DelItem(index)">
+      </li>
+    </ul>
+    <input type="text" v-model="newItem">
+    <input type="button" value="add" v-on:click="AddItem">
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
